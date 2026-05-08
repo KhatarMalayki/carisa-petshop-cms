@@ -6,8 +6,9 @@ Website Carisa Petshop yang dibangun dengan React dan Node.js, menggantikan Word
 
 ## 📚 Dokumentasi Lengkap
 
+- ⚡ [QUICK_START_LARAGON.md](QUICK_START_LARAGON.md) - **Quick Start 5 Menit (Laragon)**
 - 📖 [README.md](README.md) - Dokumentasi utama & instalasi
-- 🪟 [LARAGON_SETUP.md](LARAGON_SETUP.md) - **Setup dengan Laragon (Windows)**
+- 🪟 [LARAGON_SETUP.md](LARAGON_SETUP.md) - Setup lengkap dengan Laragon (Windows)
 - 🚀 [DEPLOYMENT.md](DEPLOYMENT.md) - Panduan deployment lengkap
 - 📡 [API_DOCUMENTATION.md](API_DOCUMENTATION.md) - API reference lengkap
 - 📊 [SUMMARY.md](SUMMARY.md) - Summary project & arsitektur
