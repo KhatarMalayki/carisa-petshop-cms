@@ -1,0 +1,113 @@
+// Prisma Schema untuk Carisa Petshop CMS
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+// User Model
+model User {
+  id        Int      @id @default(autoincrement())
+  username  String   @unique
+  email     String   @unique
+  password  String
+  role      String   @default("author") // admin, editor, author
+  createdAt DateTime @default(now())
+  
+  posts     Post[]
+}
+
+// Post Model (Blog/Tips)
+model Post {
+  id             Int       @id @default(autoincrement())
+  title          String
+  slug           String    @unique
+  content        String    @db.LongText
+  excerpt        String?   @db.Text
+  featuredImage  String?
+  category       String    @default("tips-anabul")
+  status         String    @default("draft") // draft, published
+  publishedAt    DateTime?
+  createdAt      DateTime  @default(now())
+  updatedAt      DateTime  @updatedAt
+  
+  authorId       Int
+  author         User      @relation(fields: [authorId], references: [id])
+  
+  @@index([authorId])
+  @@index([status])
+  @@index([category])
+}
+
+// Page Model
+model Page {
+  id        Int      @id @default(autoincrement())
+  title     String
+  slug      String   @unique
+  content   String   @db.LongText
+  template  String   @default("default") // default, home, services, locations, contact
+  status    String   @default("draft") // draft, published
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  
+  @@index([status])
+}
+
+// Service Model
+model Service {
+  id          Int      @id @default(autoincrement())
+  name        String
+  slug        String   @unique
+  description String   @db.Text
+  price       String?
+  features    String?  @db.Text // JSON array stored as text
+  icon        String?
+  image       String?
+  order       Int      @default(0)
+  active      Boolean  @default(true)
+  createdAt   DateTime @default(now())
+  
+  @@index([active])
+  @@index([order])
+}
+
+// Location Model
+model Location {
+  id        Int      @id @default(autoincrement())
+  name      String
+  slug      String   @unique
+  address   String   @db.Text
+  mapUrl    String?
+  phone     String?
+  whatsapp  String?
+  hours     String   @default("24 Jam")
+  services  String?  @db.Text // JSON array stored as text
+  image     String?
+  active    Boolean  @default(true)
+  createdAt DateTime @default(now())
+  
+  @@index([active])
+}
+
+// Booking Model
+model Booking {
+  id           Int      @id @default(autoincrement())
+  customerName String
+  phone        String
+  email        String?
+  petName      String
+  petType      String   // kucing, anjing, lainnya
+  service      String
+  location     String
+  bookingDate  DateTime
+  notes        String?  @db.Text
+  status       String   @default("pending") // pending, confirmed, completed, cancelled
+  createdAt    DateTime @default(now())
+  
+  @@index([status])
+  @@index([bookingDate])
+}
