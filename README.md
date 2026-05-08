@@ -274,6 +274,40 @@ git push heroku main
 - ✅ Authentication & Authorization
 - ✅ Image upload
 - ✅ Responsive design
+- ✅ Pushed to GitHub: https://github.com/KhatarMalayki/carisa-petshop-cms
+
+## 🎯 Cara Menggunakan
+
+### Quick Start
+
+1. **Clone & Install**
+```bash
+git clone https://github.com/KhatarMalayki/carisa-petshop-cms.git
+cd carisa-petshop-cms
+npm install
+cd client && npm install && cd ..
+```
+
+2. **Setup Database**
+- Install MongoDB atau gunakan MongoDB Atlas
+- Copy `.env.example` ke `.env` dan sesuaikan
+
+3. **Jalankan**
+```bash
+npm run dev
+```
+
+4. **Buat Admin User**
+```bash
+# Register via API atau gunakan Postman
+curl -X POST http://localhost:5000/api/auth/register \
+  -H "Content-Type: application/json" \
+  -d '{"username":"admin","email":"admin@carisa.id","password":"admin123","role":"admin"}'
+```
+
+5. **Login ke Admin**
+- Buka http://localhost:3000/admin
+- Login dengan email & password yang dibuat
 
 ## 🤝 Contributing
 
