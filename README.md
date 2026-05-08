@@ -2,6 +2,15 @@
 
 Website Carisa Petshop yang dibangun dengan React dan Node.js, menggantikan WordPress dengan fitur admin panel lengkap.
 
+**🔗 GitHub Repository**: https://github.com/KhatarMalayki/carisa-petshop-cms
+
+## 📚 Dokumentasi Lengkap
+
+- 📖 [README.md](README.md) - Dokumentasi utama & instalasi
+- 🚀 [DEPLOYMENT.md](DEPLOYMENT.md) - Panduan deployment lengkap
+- 📡 [API_DOCUMENTATION.md](API_DOCUMENTATION.md) - API reference lengkap
+- 📊 [SUMMARY.md](SUMMARY.md) - Summary project & arsitektur
+
 ## 🚀 Fitur Utama
 
 ### Frontend (React)
