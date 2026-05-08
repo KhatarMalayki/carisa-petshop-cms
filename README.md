@@ -4,11 +4,38 @@ Website Carisa Petshop yang dibangun dengan React dan Node.js, menggantikan Word
 
 **🔗 GitHub Repository**: https://github.com/KhatarMalayki/carisa-petshop-cms
 
+## 🎯 Pilih Database:
+
+### ⚡ MySQL + Prisma (RECOMMENDED - Lebih Gampang!)
+✅ MySQL sudah built-in di Laragon
+✅ Prisma ORM super mudah
+✅ Gak perlu nulis SQL manual
+✅ Prisma Studio (GUI gratis)
+✅ Type-safe & auto-complete
+
+**👉 Baca: [MYSQL_PRISMA_SETUP.md](MYSQL_PRISMA_SETUP.md)**
+
+### 🍃 MongoDB + Mongoose (Alternative)
+✅ NoSQL database
+✅ Flexible schema
+✅ JSON-like documents
+
+**👉 Baca: [README.md](README.md) - Setup MongoDB**
+
+---
+
 ## 📚 Dokumentasi Lengkap
 
+### 🚀 Quick Start
 - ⚡ [QUICK_START_LARAGON.md](QUICK_START_LARAGON.md) - **Quick Start 5 Menit (Laragon)**
-- 📖 [README.md](README.md) - Dokumentasi utama & instalasi
 - 🪟 [LARAGON_SETUP.md](LARAGON_SETUP.md) - Setup lengkap dengan Laragon (Windows)
+
+### 💾 Database Options
+- ⚡ [MYSQL_PRISMA_SETUP.md](MYSQL_PRISMA_SETUP.md) - **MySQL + Prisma (RECOMMENDED)**
+- 🍃 MongoDB + Mongoose - Lihat bagian instalasi di bawah
+
+### 📖 Documentation
+- 📖 [README.md](README.md) - Dokumentasi utama & instalasi
 - 🚀 [DEPLOYMENT.md](DEPLOYMENT.md) - Panduan deployment lengkap
 - 📡 [API_DOCUMENTATION.md](API_DOCUMENTATION.md) - API reference lengkap
 - 📊 [SUMMARY.md](SUMMARY.md) - Summary project & arsitektur
