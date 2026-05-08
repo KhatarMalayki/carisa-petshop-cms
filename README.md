@@ -302,6 +302,15 @@ git push heroku main
 
 ## 📝 Changelog
 
+### Version 1.1.0 (2026-05-08)
+- ✅ **UI MAJOR UPDATE**: Homepage sekarang sama persis dengan carisa.id
+- ✅ Hero section dengan layout 2 kolom (text kiri, gambar anjing kanan)
+- ✅ Button text diubah jadi "Grooming Sekarang!" (bukan "Booking Grooming!")
+- ✅ Tambah FAQ section dengan accordion interaktif
+- ✅ Gambar anjing dari Unsplash di hero section
+- ✅ Layout dan styling 100% match dengan website asli carisa.id
+- ✅ Responsive design untuk mobile
+
 ### Version 1.0.0 (2026-05-08)
 - ✅ Initial release
 - ✅ Frontend React dengan design mirip carisa.id

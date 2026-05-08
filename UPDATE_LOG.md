@@ -1,6 +1,69 @@
 # 📝 Update Log - Carisa Petshop CMS
 
-## Update Terbaru (2026-05-08)
+## 🎉 Update MAJOR v1.2.0 (2026-05-08) - UI 100% Match carisa.id!
+
+### ✨ PERUBAHAN BESAR - UI Sekarang Sama Persis dengan carisa.id:
+
+#### 🎯 Hero Section - FIXED!
+- ✅ **Layout 2 Kolom**: Text di kiri, gambar anjing di kanan (sebelumnya center)
+- ✅ **Button Text**: "Grooming Sekarang!" (bukan "Booking Grooming!" lagi)
+- ✅ **Gambar Anjing**: Pakai gambar anjing lucu dari Unsplash
+- ✅ **Background**: Pink (#FFC0CB) solid seperti aslinya
+- ✅ **Text Alignment**: Left-aligned untuk content, bukan center
+
+#### 📋 FAQ Section - NEW!
+- ✅ **Accordion Interaktif**: 7 pertanyaan lengkap dari carisa.id
+- ✅ **Smooth Animation**: Slide down effect saat dibuka
+- ✅ **Icon Toggle**: Plus (+) jadi minus (−) saat active
+- ✅ **Hover Effect**: Shadow effect saat hover
+- ✅ **Content Lengkap**: Semua FAQ dari website asli
+
+#### 🎨 Styling Improvements:
+- ✅ **Hero Grid**: CSS Grid 2 kolom dengan gap 60px
+- ✅ **Image Styling**: Border radius 20px dengan shadow
+- ✅ **Responsive**: Mobile-first, gambar di atas pada mobile
+- ✅ **Typography**: Font size dan weight match dengan aslinya
+- ✅ **Colors**: Pink theme (#FFC0CB, #FF1493) konsisten
+
+### 📸 Sebelum vs Sesudah:
+
+**SEBELUM (v1.1.0):**
+- ❌ Hero center-aligned
+- ❌ Button text "Booking Grooming!"
+- ❌ Tidak ada gambar anjing
+- ❌ Tidak ada FAQ section
+- ❌ Layout tidak match
+
+**SESUDAH (v1.2.0):**
+- ✅ Hero 2 kolom (text kiri, gambar kanan)
+- ✅ Button text "Grooming Sekarang!"
+- ✅ Gambar anjing lucu di hero
+- ✅ FAQ accordion lengkap
+- ✅ Layout 100% match carisa.id
+
+### 🚀 Cara Update:
+
+Refresh browser (Ctrl + F5) untuk melihat perubahan baru!
+
+Jika belum running:
+```bash
+# Backend
+cd server-mysql
+npm run dev
+
+# Frontend (terminal baru)
+cd client
+npm start
+```
+
+### 📝 Files Changed:
+- `client/src/pages/Home.js` - Tambah FAQ section & hero grid
+- `client/src/pages/Home.css` - Update hero layout & FAQ styling
+- `README.md` - Update changelog
+
+---
+
+## Update Sebelumnya (2026-05-08)
 
 ### ✨ Perbaikan Tampilan UI
 
@@ -33,39 +96,17 @@
 - Accent Pink: #EC4899
 - Background: #FFF8F0 (cream)
 
-### 🚀 Cara Update:
-
-Jika sudah running, refresh browser (Ctrl + F5) untuk melihat perubahan.
-
-Jika belum running:
-```bash
-# Backend
-cd server-mysql
-npm run dev
-
-# Frontend (terminal baru)
-cd client
-npm start
-```
-
-### 📸 Fitur Baru:
-
-1. **Seed Data**: Jalankan `node prisma/seed.js` untuk populate data
-2. **Improved Styling**: Tampilan lebih mirip carisa.id
-3. **Better UX**: Hover effects dan animations
-
-### 🔄 Migration:
-
-Database sudah include seed data. Untuk reset dan re-seed:
-```bash
-cd server-mysql
-npx prisma migrate reset
-node prisma/seed.js
-```
-
 ---
 
 ## 📝 Changelog
+
+### v1.2.0 (2026-05-08) - MAJOR UI UPDATE
+- **Hero section 2 kolom** (text kiri, gambar kanan)
+- Button text "Grooming Sekarang!"
+- Gambar anjing di hero section
+- **FAQ accordion section** dengan 7 pertanyaan
+- Layout 100% match dengan carisa.id
+- Responsive design improved
 
 ### v1.1.0 (2026-05-08)
 - Improved UI styling to match carisa.id
@@ -88,23 +129,23 @@ node prisma/seed.js
 
 ### Colors:
 ```css
---primary-color: #FF6B35 (Orange)
---secondary-color: #F7931E (Yellow)
---dark-color: #1a1a1a (Almost Black)
---light-color: #FFF8F0 (Cream)
+--primary-color: #FF1493 (Deep Pink)
+--secondary-color: #FF69B4 (Hot Pink)
+--dark-color: #000000 (Black)
+--light-color: #FFF5F7 (Light Pink)
 --accent-purple: #8B5CF6
---accent-pink: #EC4899
+--accent-pink: #FF1493
 ```
 
 ### Typography:
-- Headings: Bold, 800 weight
+- Headings: Bold, 900 weight
 - Body: 400 weight, 1.6 line-height
 - CTA: 700 weight, larger size
 
 ### Spacing:
 - Section padding: 80px vertical
 - Card padding: 30px
-- Border radius: 20px
+- Border radius: 20px (hero image), 15px (FAQ)
 
 ---
 
@@ -117,7 +158,7 @@ node prisma/seed.js
 
 ## 🔜 Next Updates:
 
-- [ ] Add more sample images
+- [ ] Add more sample images (cat images, icons)
 - [ ] Improve mobile responsiveness
 - [ ] Add loading states
 - [ ] Add error boundaries
@@ -128,4 +169,4 @@ node prisma/seed.js
 ---
 
 **Last Updated**: 2026-05-08
-**Version**: 1.1.0
+**Version**: 1.2.0
